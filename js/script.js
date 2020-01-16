@@ -1,28 +1,23 @@
 $(document).ready(function() {
 	// init
-	TweenLite.defaultEase = Linear.easeNone;
 	var controller = new ScrollMagic.Controller();
-	var slideController = new ScrollMagic.Controller({
-		globalSceneOptions: {
-			triggerHook: 'onLeave',
-			duration: "200%" 
-		}
-	});
+	var slideController = new ScrollMagic.Controller();
 
-	//get all slides
-	var slides = $("section.full-height");
-
-	// create scene for every slide
-	for (var i=0; i<slides.length; i++) {
-		new ScrollMagic.Scene({
-				triggerElement: slides[i]
-			})
-			.setPin(slides[i], {pushFollowers: false})
-			.addTo(slideController);
-	}
-
-	// create scene 
+	var wipeAnimation = new TimelineMax()
+		.fromTo(".panel.two", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
+		.fromTo(".panel.three", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
+		.fromTo(".panel.four", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone});
+	
 	new ScrollMagic.Scene({
+		triggerElement: ".pinContainer",
+		triggerHook: "onLeave",
+		duration: "300%"
+		})
+		.setPin(".pinContainer")
+		.setTween(wipeAnimation)
+		.addTo(slideController);
+
+	/*new ScrollMagic.Scene({
 		triggerElement: "#trigger",
 		duration: 100,
 		offset: 50
@@ -56,5 +51,5 @@ $(document).ready(function() {
 	})
 	.setTween(new TweenMax.to("#overallw10", 1, {css: {opacity: 0}, ease: Linear.easeNone}))
 	.addIndicators({name: "10"})
-	.addTo(controller);
+	.addTo(controller);*/
 });

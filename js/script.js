@@ -1,37 +1,60 @@
-// init controller
-var controller = new ScrollMagic.Controller();
+$(document).ready(function() {
+	// init
+	TweenLite.defaultEase = Linear.easeNone;
+	var controller = new ScrollMagic.Controller();
+	var slideController = new ScrollMagic.Controller({
+		globalSceneOptions: {
+			triggerHook: 'onLeave',
+			duration: "200%" 
+		}
+	});
 
-// create scenes
-$( document ).ready(function() {
-    var scene95 = new ScrollMagic.Scene({
-		triggerElement: "#overall",
-		offset: 50,
-		triggerHook: 0.9,
-		reverse: true
-	})
-	.setClassToggle("#overall95", "visible") 
-	var sceneXP = new ScrollMagic.Scene({
-		duration: 100, // the scene should last for a scroll distance of 100px
-		offset: 100 // start this scene after scrolling for 50px
-	})
-    .setPin('#overallxp') // pins the element for the the scene's duration
+	// get all slides
+	var slides = $("section.full-height");
 
-	var sceneVista = new ScrollMagic.Scene({
-		duration: 100, // the scene should last for a scroll distance of 100px
-		offset: 200 // start this scene after scrolling for 50px
-	})
-    .setPin('#overallvista') // pins the element for the the scene's duration
+	// create scene for every slide
+	for (var i=0; i<slides.length; i++) {
+		new ScrollMagic.Scene({
+				triggerElement: slides[i]
+			})
+			.setPin(slides[i], {pushFollowers: false})
+			.addTo(slideController);
+	}
 
-	var scene10 = new ScrollMagic.Scene({
-		duration: 100, // the scene should last for a scroll distance of 100px
-		offset: 300 // start this scene after scrolling for 50px
+	// create scene 
+	new ScrollMagic.Scene({
+		triggerElement: "#trigger",
+		duration: 100,
+		offset: 50
 	})
-    .setPin('#overall10') // pins the element for the the scene's duration
+	.setTween(new TweenMax.to("#overall95", 1, {css: {opacity: 0}, ease: Linear.easeNone}))
+	.addIndicators({name: "95"})
+	.addTo(controller);
 
-	controller.addScene([
-		scene95,
-		sceneXP,
-		sceneVista,
-		scene10
-	]);
+	new ScrollMagic.Scene({
+		triggerElement: "#trigger",
+		duration: 100,
+		offset: 250
+	})
+	.setTween(new TweenMax.to("#overallxp", 1, {css: {opacity: 0}, ease: Linear.easeNone}))
+	.addIndicators({name: "XP"})
+	.addTo(controller);
+
+	new ScrollMagic.Scene({
+		triggerElement: "#trigger",
+		duration: 100,
+		offset: 450
+	})
+	.setTween(new TweenMax.to("#overallvista", 1, {css: {opacity: 0}, ease: Linear.easeNone}))
+	.addIndicators({name: "Vista"})
+	.addTo(controller);
+
+	new ScrollMagic.Scene({
+		triggerElement: "#trigger",
+		duration: 100,
+		offset: 650
+	})
+	.setTween(new TweenMax.to("#overallw10", 1, {css: {opacity: 0}, ease: Linear.easeNone}))
+	.addIndicators({name: "10"})
+	.addTo(controller);
 });

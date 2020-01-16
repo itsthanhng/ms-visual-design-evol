@@ -9,7 +9,7 @@ $(document).ready(function() {
 		}
 	});
 
-	// get all slides
+	//get all slides
 	var slides = $("section.full-height");
 
 	// create scene for every slide

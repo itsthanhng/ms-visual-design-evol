@@ -1,12 +1,14 @@
 @charset "utf-8";
+* {
+	box-sizing: border-box;
+}
 body {
 	font-family: 'Raleway', sans-serif;
 	color: aliceblue;
 	text-align: center;
 	letter-spacing: 0.01em;
 	line-height: 1.5;
-	margin: 0 10vw;
-	background: linear-gradient(135deg, rgba(0,61,143,1) 0%, rgba(0,106,143,1) 100%) no-repeat center center fixed;
+	margin: 0
 }
 
 h1 {
@@ -26,14 +28,18 @@ h3 {
 	letter-spacing: 0.01em;
 }
 
+.column {
+	float: left;
+	text-align: left;
+	padding: 10px;
+	width: 50%;
+}
+
 .full-height {
 	margin: 0;
 	min-height: 100vh;
 	background: linear-gradient(135deg, rgba(0,61,143,1) 0%, rgba(0,106,143,1) 100%) no-repeat center center fixed;
-}
-
-#overall {
-	margin-bottom: 400%;
+	padding: 0 10vw;
 }
 
 #overall95 {
@@ -64,8 +70,8 @@ h3 {
 }
 
 .image {
-	width: 50vh;
-	height: 50vh;
+	width: 600px;
+	height: 600px;
 	background-repeat: no-repeat;
 	background-position: center;
 	
@@ -97,3 +103,10 @@ h3 {
 .spacer.s3 {
 	min-height: 30vh;
 }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column {
+	   width: 100%;
+	}
+  }

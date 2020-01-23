@@ -23,7 +23,7 @@ h3 {
 
 .sections {
 	width: 100%;
-	height: 100%;
+	height: 300%;
 	overflow: hidden;
 }
 
@@ -31,7 +31,7 @@ h3 {
 	position: absolute;
 	padding: 0 10vw;
 	width: 100%;
-	height: 300%;
+	height: 100%;
 }
 	
 .title {
@@ -76,6 +76,16 @@ h3 {
 	opacity: 0;
 }
 
+.descriptions {
+	display: flex;
+	flex-direction: row;
+}
+
+.description {
+	margin: auto;
+	padding: auto;
+}
+
 .spacer {
 	text-align: center;
 	min-height: 10vh;
@@ -112,5 +122,25 @@ h3 {
 #overallw10 {
 	background-image: url('img/overall-10.jpg');
 	position: absolute;
+	z-index: 1;
+}
+
+#overall95d {
+	position: relative;
+	z-index: 4;
+}
+#overallxpd {
+	position: absolute;
+	opacity: 0;
+	z-index: 3;
+}
+#overallvistad {
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+}
+#overallw10d {
+	position: absolute;
+	opacity: 0;
 	z-index: 1;
 }

@@ -5,6 +5,13 @@ p {
 	color: aliceblue;
 }
 
+ul > li {
+	margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+	color: aliceblue;
+}
+
 html, body {
 	height: 100%;
 }
@@ -23,7 +30,7 @@ h3 {
 
 .sections {
 	width: 100%;
-	height: 300%;
+	height: 350%;
 	overflow: hidden;
 }
 
@@ -31,7 +38,7 @@ h3 {
 	position: absolute;
 	padding: 0 10vw;
 	width: 100%;
-	height: 100%;
+	height: 350%;
 }
 	
 .title {
@@ -51,6 +58,10 @@ h3 {
 
 .section.four {
 	background: linear-gradient(135deg, rgba(51,221,125,1) 0%, rgba(18,122,92,1) 100%) no-repeat center center fixed;
+}
+
+.section.five {
+	background: linear-gradient(135deg, rgba(0,61,143,1) 0%, rgba(0,106,143,1) 100%) no-repeat center center fixed;
 }
 
 .images {
@@ -106,7 +117,7 @@ h3 {
 
 #overall95 {
 	background-image: url('img/overall-95.jpg');
-	position: relative;
+	position: absolute;
 	z-index: 4;
 }
 #overallxp {
@@ -126,7 +137,7 @@ h3 {
 }
 
 #overall95d {
-	position: relative;
+	position: absolute;
 	z-index: 4;
 }
 #overallxpd {
@@ -140,6 +151,89 @@ h3 {
 	z-index: 2;
 }
 #overallw10d {
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+}
+
+#logo95 {
+	background-image: url('img/logo-color-95.jpg');
+	position: absolute;
+	z-index: 4;
+}
+#logoxp {
+	background-image: url('img/logo-color-xp.jpg');
+	position: absolute;
+	z-index: 3;
+}
+#logovista {
+	background-image: url('img/logo-color-vista.jpg');
+	position: absolute;
+	z-index: 2;
+}
+#logow10 {
+	background-image: url('img/logo-color-10.jpg');
+	position: absolute;
+	z-index: 1;
+}
+
+#logo95d {
+	position: absolute;
+	z-index: 4;
+}
+#logoxpd {
+	position: absolute;
+	opacity: 0;
+	z-index: 3;
+}
+#logovistad {
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+}
+#logow10d {
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+}
+
+#icon95 {
+	background-image: url('img/icon-95.jpg');
+	position: absolute;
+	z-index: 4;
+}
+#iconxp {
+	background-image: url('img/icon-xp.jpg');
+	position: absolute;
+	z-index: 3;
+}
+#iconvista {
+	background-image: url('img/icon-vista.jpg');
+	position: absolute;
+	z-index: 2;
+}
+#iconw10 {
+	background-image: url('img/icon-10.jpg');
+	position: absolute;
+	z-index: 1;
+}
+
+
+#icon95d {
+	position: absolute;
+	z-index: 4;
+}
+#iconxpd {
+	position: absolute;
+	opacity: 0;
+	z-index: 3;
+}
+#iconvistad {
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+}
+#iconw10d {
 	position: absolute;
 	opacity: 0;
 	z-index: 1;

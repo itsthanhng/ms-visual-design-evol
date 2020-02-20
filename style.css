@@ -1,53 +1,81 @@
-@charset "utf-8";
-body {
-	height: 100%;
-	font-family: 'Raleway', sans-serif;
-	color: aliceblue;
-	text-align: center;
-	letter-spacing: 0.01em;
-	line-height: 1.5;
+p {
 	margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+	color: aliceblue;
+}
+
+ul > li {
+	margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+	color: aliceblue;
+}
+
+html, body {
+	height: 100%;
 }
 
 h1 {
 	font-family: 'Poppins', sans-serif;
 	color: aliceblue;
-	font-size: 5rem;
-	line-height: 1;
-	letter-spacing: 0.02em;
+	font-size: 5rem !important; 
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	color: aliceblue;
+	font-size: 2rem !important;
+	text-align: center;
 }
 
 h3 {
 	font-family: 'Poppins', sans-serif;
 	color: aliceblue;
-	font-size: 2rem;
-	line-height: 1;
-	letter-spacing: 0.01em;
+	font-size: 2rem !important;
 }
 
-p {
-	margin: 1rem;
-}
-
-.panel {
+.sections {
 	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0 10vw;
-	background: linear-gradient(135deg, rgba(0,61,143,1) 0%, rgba(0,106,143,1) 100%) no-repeat center center fixed;
+	height: 350%;
+	overflow: hidden;
+}
+
+.section {
 	position: absolute;
+	padding: 0 10vw;
+	width: 100%;
+}
+	
+.title {
+    background: linear-gradient(135deg, rgba(0,61,143,1) 0%, rgba(0,106,143,1) 100%) no-repeat center center fixed;
+    height: 100%;
+	width: 100%;
+    padding: 0 10vw;
 }
 
-.panel.two {
-	background-color: blue;
+.subtitle {
+	text-align: center;
 }
 
-.panel.three {
-	background-color: yellow;
+.section.two {
+	background: linear-gradient(135deg, rgba(60,21,59,1) 0%, rgba(161,44,95,1) 100%) no-repeat center center fixed;
+	height: 100vh;
 }
 
-.panel.four {
-	background-color: green;
+.section.three {
+	background: linear-gradient(135deg, rgba(239,71,71,1) 0%, rgba(239,71,111,1) 100%) no-repeat center center fixed;
+	height: 100vh;
+}
+
+.section.four {
+	background: linear-gradient(135deg, rgba(51,221,125,1) 0%, rgba(18,122,92,1) 100%) no-repeat center center fixed;
+	height: 100vh;
+}
+
+.section.five {
+	background: linear-gradient(135deg, rgba(0,61,143,1) 0%, rgba(0,106,143,1) 100%) no-repeat center center fixed;
 }
 
 .images {
@@ -59,7 +87,6 @@ p {
 .image {
 	width: 500px;
 	height: 500px;
-	margin: 1em;
 	background-repeat: no-repeat;
 	background-position: center;
 	
@@ -70,8 +97,79 @@ p {
 	transition: all 0.6s ease-out;
 }
 
+.button-image {
+	width: 500px;
+	height: 160px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	-webkit-transition: all 0.6s ease-out;
+	-moz-transition: all 0.6s ease-out;
+	-ms-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	transition: all 0.6s ease-out;
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	top: 2vh;
+	left: 50vw;
+	z-index: 200;
+}
+
+.overlay > b {
+	color: aliceblue;
+}
+
+.overlay > a {
+	color: aliceblue
+}
+
+.overlay > a:hover {
+	color: aliceblue;
+	text-decoration: underline;
+}
+
+.wrapper{
+	text-align: center;
+}
+.myButton {
+	background-color:transparent;
+	border-radius:28px;
+	border:2px solid aliceblue;
+	display:inline-block;
+	cursor:pointer;
+	color:aliceblue;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:aliceblue;
+	text-decoration: none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
 .image.invisible {
 	opacity: 0;
+}
+
+.descriptions {
+	display: flex;
+	flex-direction: row;
+}
+
+.description {
+	margin: auto;
+	padding: auto;
 }
 
 .spacer {
@@ -80,7 +178,7 @@ p {
 	background-image: url("img/example_bg_spacer_v.png");
 }
 .spacer.s0 {
-	min-height: 1px;
+	min-height: 0.1px;
 }
 .spacer.s1 {
 	min-height: 10vh;
@@ -92,9 +190,13 @@ p {
 	min-height: 30vh;
 }
 
+.spacer.s4 {
+	min-height: 60vh;
+}
+
 #overall95 {
 	background-image: url('img/overall-95.jpg');
-	position: relative;
+	position: absolute;
 	z-index: 4;
 }
 #overallxp {
@@ -113,15 +215,129 @@ p {
 	z-index: 1;
 }
 
-.pinContainer {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+#overall95d {
+	position: absolute;
+	z-index: 4;
+}
+#overallxpd {
+	position: absolute;
+	opacity: 0;
+	z-index: 3;
+}
+#overallvistad {
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+}
+#overallw10d {
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-	.column {
-	   width: 100%;
-	}
-  }
+#logo95 {
+	background-image: url('img/logo-color-95.jpg');
+	position: absolute;
+	z-index: 4;
+}
+#logoxp {
+	background-image: url('img/logo-color-xp.jpg');
+	position: absolute;
+	z-index: 3;
+}
+#logovista {
+	background-image: url('img/logo-color-vista.jpg');
+	position: absolute;
+	z-index: 2;
+}
+#logow10 {
+	background-image: url('img/logo-color-10.jpg');
+	position: absolute;
+	z-index: 1;
+}
+
+#logo95d {
+	position: absolute;
+	z-index: 4;
+}
+#logoxpd {
+	position: absolute;
+	opacity: 0;
+	z-index: 3;
+}
+#logovistad {
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+}
+#logow10d {
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+}
+
+#icon95 {
+	background-image: url('img/icon-95.jpg');
+	position: absolute;
+	z-index: 4;
+}
+#iconxp {
+	background-image: url('img/icon-xp.jpg');
+	position: absolute;
+	z-index: 3;
+}
+#iconvista {
+	background-image: url('img/icon-vista.jpg');
+	position: absolute;
+	z-index: 2;
+}
+#iconw10 {
+	background-image: url('img/icon-10.jpg');
+	position: absolute;
+	z-index: 1;
+}
+
+#old1 {
+	background-image: url('img/old-1.png');
+}
+#old2 {
+	background-image: url('img/old-2.png');
+}
+#old3 {
+	background-image: url('img/old-3.png');
+}
+#old4 {
+	background-image: url('img/old-4.png');
+}
+#new1 {
+	background-image: url('img/new-1.png');
+}
+#new2 {
+	background-image: url('img/new-2.png');
+}
+#new3 {
+	background-image: url('img/new-3.png');
+}
+#new4 {
+	background-image: url('img/new-4.png');
+}
+
+#icon95d {
+	position: absolute;
+	z-index: 4;
+}
+#iconxpd {
+	position: absolute;
+	opacity: 0;
+	z-index: 3;
+}
+#iconvistad {
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+}
+#iconw10d {
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+}

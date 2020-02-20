@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Modern Visual Design</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script	src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="overlay">
+        <b>EN</b>
+        <a href="part1-de.html">DE</a>
+    </div>
+    <div class="spacer s0"></div>
+    <div class="sections">    
+        <div class="title section one">
+            <div class="spacer s3"></div>
+            <h1>Modern Design</h1>
+            <h2>Part 1: Visual Design</h2>
+            <div class="spacer s1"></div>
+            <p>(n.) the aesthetic appeal or look-and-feel aspect of a tech product, or</p>
+            <p>(n.) the process of improving user experiences while interacting with a tech product through the use of pictograms, colors, shapes, and typography</p>
+            <p>To have a clearer insight of what modern visual design is, let’s take a look how Microsoft Windows’ User Interface evolved through 25 years, from 1995 to 2020, and see how you come to your own definition of modern visual design.</p>
+
+        </div> 
+        <div class="section two"> 
+            <div class="spacer s1"></div>
+            <h1>Overall Style</h1>
+            <p class="subtitle">The overall style of the system is responsible for giving the user the very first impressions as well as influencing the vibe of the whole system. Wallpaper aside, the elements that are taken into consideration are the taskbar, the start menu, the title bar, and the menu buttons.</p>
+            <div class="spacer s1"></div>
+            <div class="row">
+                <div class="images col-lg-6">
+                    <div class="image" id="overall95"></div>
+                    <div class="image" id="overallxp"></div>
+                    <div class="image" id="overallvista"></div>
+                    <div class="image" id="overallw10"></div>
+                </div>
+                <div class="col-lg-6 descriptions">
+                    <div class="description" id="overall95d">
+                        <h3>Windows 95 (1995)</h3>
+                        <p>Windows 95 was the first operating system from Microsoft to feature the Start button on the bottom left corner of the screen to call out the Start menu. The overall look-and-feel is clean-cut and very similar to the other operating systems introduced in the same decade. It featured edgy and angular elements with clean and sharp embossment to create the illusion of depth, which led to the very high contrast between active and inactive elements.</p>
+                        <ul>
+                            <li>Edgy and angular shapes</li>
+                            <li>Clean and sharp embossment</li>
+                            <li>Illusion of depth</li>
+                            <li>High to Very high contrast</li>
+                        </ul>                             
+                    </div>
+                    <div class="description" id="overallxpd">
+                        <h3>Windows XP (2001)</h3>
+                        <p>Windows XP (stands for eXPerience) was the most widely used operating system until August 2012, featuring a more polished visual style that set it apart from every other operating system at the same time. The user interface introduced an increased use of soft gradients and shadows, which helped to render softer embossment and a more subtle and natural illusion of depth. The corners were moderately rounded, and the colors were more vivid and dynamic compared to those of its ancestor.</p>
+                        <ul>
+                            <li>Moderately rounded shapes</li>
+                            <li>Softer and more natural embossment</li>
+                            <li>More subtle and natural illusion of depth</li>
+                            <li>Increased use of soft gradients and shadows</li>
+                            <li>Reasonable amount of contrast</li>
+                        </ul>   
+                    </div>
+                    <div class="description" id="overallvistad">
+                        <h3>Windows Vista (2006)</h3>
+                        <p>Windows Vista was a complete redesign from its ancestor, Windows XP, which introduced a new design system called “Aero” with a glossier visual appearance and classier built-in animation/transitions. This design system featured:</p>
+                        <ul>
+                            <li>Rounded shapes</li>
+                            <li>Glossy embossment</li>
+                            <li>Increased use of shadows and translucent effects</li>
+                            <li>Subtle depth simulation between windows</li>
+                            <li>Moderate amount contrast</li>
+                            <li>Animations and transitions</li>
+                        </ul>   
+                    </div>
+                    <div class="description" id="overallw10d">
+                        <h3>Windows 10 (2015)</h3>
+                        <p>Windows 10 is the most recent operating system version from Microsoft which aims at fusing the touch-based and traditional interactions. To adapt to such hybrid interactive purposes, the user interface, therefore, introduces a more spacey layout and bigger clickable (or touchable) areas. The visual design is simplified and minimalized to optimize user’s concentration on their intention.</p>
+                        <ul>
+                            <li>Edgy and angular shapes</li>
+                            <li>No embossment, flatter design</li>
+                            <li>Moderate to limited amount of shadows and translucent effects</li>
+                            <li>Subtle illusion of depth between windows </li>
+                            <li>Moderate contrast</li>
+                            <li>Subtle animations and transitions</li>
+                            <li>More spacey layout, more negative space</li>
+                            <li>Dark mode</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section three">
+            <div class="spacer s1"></div>
+            <h1>Logo & Color Scheme</h1>
+            <p class="subtitle">Throughout the years, there hasn’t been any dramatic change in term of color scheme, whereas the Windows logo evolved quite drastically, which also reflected the up-to-date visual design trend at the time it was introduced. </p>
+            <div class="spacer s1"></div>
+            <div class="row">
+                <div class="descriptions col-lg-6">
+                    <div class="description" id="logo95d">
+                        <h3>Windows 95 (1995)</h3>
+                        <p>Logo: Flat-retro style (from the viewpoint of 2020)</p>
+                        <p>Color Scheme: Basic colors, partly because of technical limitations (not a lot of colors were supported back then)</p>
+                    </div>
+                    <div class="description" id="logoxpd">
+                        <h3>Windows XP (2001)</h3>
+                        <p>Logo: More 3D-ish, skeuomorphism applied (which resemble the look of a real flag)</p>
+                        <p>Color Scheme: More vivid and dynamic than its ancestor thank to the combination of single-color and gradient</p>
+                    </div>
+                    <div class="description" id="logovistad">
+                        <h3>Windows Vista (2006)</h3>
+                        <p>Logo: More simplified compared to its ancestor with a more moderate use of gradient</p>
+                        <p>Color scheme: an additional palette for darker colors, higher color contrast between bright and dark colors</p>
+                    </div>
+                    <div class="description" id="logow10d">
+                        <h3>Windows 10 (2015)</h3>
+                        <p>Logo: Flat design, monotone, with sharp edges and corners</p>
+                        <p>Color scheme: More vivid and customizable, dark mode and light mode added</p>
+                    </div>
+                </div>
+
+                <div class="images col-lg-6">
+                    <div class="image" id="logo95"></div>
+                    <div class="image" id="logoxp"></div>
+                    <div class="image" id="logovista"></div>
+                    <div class="image" id="logow10"></div>
+                </div>
+                
+            </div>
+        </div>    
+
+        <div class="section four">
+            <div class="spacer s1"></div>
+            <h1>Icon & Typography</h1>
+            <p class="subtitle">Iconology plays an important role in shaping and maintaining the consistency of the whole system. </p>
+            <div class="spacer s1"></div>
+            <div class="row">
+                <div class="images col-lg-6">
+                    <div class="image" id="icon95"></div>
+                    <div class="image" id="iconxp"></div>       
+                    <div class="image" id="iconvista"></div>
+                    <div class="image" id="iconw10"></div>
+                </div>
+                <div class="descriptions col-lg-6">
+                    <div class="image" id="icon95d">
+                        <h3>Windows 95 (1995)</h3>
+                        <p>Windows 95 advocated the use of isometric iconography (pictogram from a perspective). Despite all technical limitations back then, the icons were clean, easy to understand and classy.</p>
+                        <p>However, the typeface was not the case where the design goes ahead of time: Microsoft Sans Serif were pixelated, therefore, hard to read.</p>
+                    </div>
+                    <div class="image" id="iconxpd">
+                        <h3>Windows XP (2001)</h3>
+                        <p>Icon-wise, while windows XP maintained the isometric principles, the whole icon set was refined and refreshed to optimize the resolution as well as the colors to fully utilize what the technology had to offer at the time.</p>
+                        <p>Windows XP used a combination of 4 different typefaces in different use cases. Franklin Gothic is used only for big text like headers, Trebuchet MS is used for the title bars of windows. Verdana is used only for title bars of tear-off/floating palettes, whereas Tahoma is used as the system's default font. </p>
+                    </div>       
+                    <div class="image" id="iconvistad">
+                        <h3>Windows Vista (2006)</h3>
+                        <p>This windows version followed the glossy UI style; thus, the icons need to be changed as well to fit to the overall visual appearance. This is the era where Microsoft Windows patterned itself upon skeuomorphism to the max where every pictogram they created were as lifelike and detailed as possible.</p>
+                        <p>This is the period where the screen resolution started to evolve again with the appearance of HD and Full HD resolutions. A new typeface, therefore, has been utilized thank to its versatility, or in the other words, it is easy to read regardless of the screen resolution</p>
+                    </div>
+                    <div class="image" id="iconw10d">
+                        <h3>Windows 10 (2015)</h3>
+                        <p>Windows 10 was launched when skeuomorphism started to lose its popularity, and as a results, the icons were refreshed and simplified to conform to the flat look-and-feel of the system while remaining classy and elegant thank to the smart use of color shades and gradients.</p>
+                        <p>The typeface was slightly adjusted, but after all, it’s still being utilized after more than 15 years of usage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section five">
+            <div class="spacer s1"></div>
+            <h1>Summary</h1>
+            <p class="subtitle">To sum up, let's take a look at these final comparisons between old design style and new design style!</p>
+            <div class="spacer s1"></div>
+            <div class="row">
+                <div class="button-image col-lg-6" id="old1"></div>
+                <div class="button-image col-lg-6" id="new1"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p style="text-align: center;">Windows Vista style: glossy, duller & darker color</p>
+                </div>
+                <div class="col-lg-6">
+                    <p style="text-align: center;">Flat style: flat, brighter pastel color</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="button-image col-lg-6" id="old2"></div>
+                <div class="button-image col-lg-6" id="new2"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p style="text-align: center;">Windows 95-2000 style: retro, edgy, basic color, pixelated typeface</p>
+                </div>
+                <div class="col-lg-6">
+                    <p style="text-align: center;">Outline style: retro, softer, more flexible color, smoother typeface</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="button-image col-lg-6" id="old3"></div>
+                <div class="button-image col-lg-6" id="new3"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p style="text-align: center;">Windows XP style: artificially embossed, humanist typeface</p>
+                </div>
+                <div class="col-lg-6">
+                    <p style="text-align: center;">Flat style: created depth by dropping subtle shadows, geometric typeface</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="button-image col-lg-6" id="old4"></div>
+                <div class="button-image col-lg-6" id="new4"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p style="text-align: center;">2006 Fancy Style: strong gradient, super glossy</p>
+                </div>
+                <div class="col-lg-6">
+                    <p style="text-align: center;">2019 Gradient Style: soft gradient, flat</p>
+                </div>
+            </div>
+            <div class="spacer s4"></div>
+            <div class="spacer s4"></div>
+            <div class="spacer s4"></div>
+
+            <h1>Modern Design</h1>
+            <h2>Part 2: Interaction Design</h2>
+            <div class="spacer s1"></div>
+            <p>(n.) a process in which designers focus on creating engaging web interfaces with logical and thought out behaviors and actions (designmodo.com)</p>
+            <p>(n.) the design of interactive products and services in which a designer's focus goes beyond the item in development to include the way users will interact with it (interaction-design.org)</p>
+            <div class="spacer s1"></div>
+            <div class="wrapper">
+                <a href="part2-en.html" class="myButton">Find out more!</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

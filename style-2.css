@@ -1,0 +1,267 @@
+p {
+	margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+	color: aliceblue;
+}
+
+ul > li {
+	margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+	color: aliceblue;
+}
+
+html, body {
+	height: 100%;
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	color: aliceblue;
+	font-size: 5rem !important; 
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	color: aliceblue;
+	font-size: 2rem !important;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	color: aliceblue;
+	font-size: 2rem !important;
+}
+
+.sections {
+	width: 100%;
+	height: 350%;
+	overflow: hidden;
+}
+
+.section {
+	position: absolute;
+	padding: 0 10vw;
+	height: 350%;
+	width: 100%;
+}
+	
+.title {
+    background: linear-gradient(135deg, rgba(0,61,143,1) 0%, rgba(0,106,143,1) 100%) no-repeat center center fixed;
+    height: 100%;
+	width: 100%;
+    padding: 0 10vw;
+}
+
+.subtitle {
+	text-align: center;
+}
+
+.section.two {
+	background: linear-gradient(135deg, rgba(60,21,59,1) 0%, rgba(161,44,95,1) 100%) no-repeat center center fixed;
+	height: 100vh;
+}
+
+.section.three {
+	background: linear-gradient(135deg, rgba(239,71,71,1) 0%, rgba(239,71,111,1) 100%) no-repeat center center fixed;
+	height: 100vh;
+}
+
+.section.four {
+	background: linear-gradient(135deg, rgba(0,61,143,1) 0%, rgba(0,106,143,1) 100%) no-repeat center center fixed;
+	height: 100vh;
+}
+
+.images {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.image {
+	width: 500px;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	-webkit-transition: all 0.6s ease-out;
+	-moz-transition: all 0.6s ease-out;
+	-ms-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	transition: all 0.6s ease-out;
+}
+
+.button-image {
+	width: 500px;
+	height: 160px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	-webkit-transition: all 0.6s ease-out;
+	-moz-transition: all 0.6s ease-out;
+	-ms-transition: all 0.6s ease-out;
+	-o-transition: all 0.6s ease-out;
+	transition: all 0.6s ease-out;
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	top: 2vh;
+	left: 50vw;
+	z-index: 200;
+}
+
+.overlay > b {
+	color: aliceblue;
+}
+
+.overlay > a {
+	color: aliceblue
+}
+
+.overlay > a:hover {
+	color: aliceblue;
+	text-decoration: underline;
+}
+
+.wrapper{
+	text-align: center;
+}
+.myButton {
+	background-color:transparent;
+	border-radius:28px;
+	border:2px solid aliceblue;
+	display:inline-block;
+	cursor:pointer;
+	color:aliceblue;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:aliceblue;
+	text-decoration: none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.image.invisible {
+	opacity: 0;
+}
+
+.row {
+	position: relative;
+}
+
+.description {
+	margin: auto;
+	padding: auto;
+}
+
+.spacer {
+	text-align: center;
+	min-height: 10vh;
+	background-image: url("img/example_bg_spacer_v.png");
+}
+.spacer.s0 {
+	min-height: 0.1px;
+}
+.spacer.s1 {
+	min-height: 10vh;
+}
+.spacer.s2 {
+	min-height: 20vh;
+}
+.spacer.s3 {
+	min-height: 30vh;
+}
+
+.spacer.s4 {
+	min-height: 60vh;
+}
+
+#hcd {
+	background-image: url('img/hcd.png');
+	min-width: 100%;
+	min-height: 60%;
+	z-index: 4;
+}
+
+#desktop-only {
+	background-image: url('img/desktop-only.png');
+	position: absolute;
+	top: 0;
+	z-index: 4;
+}
+
+#desktop-only-d {
+	position: absolute;
+	top: 0;
+	z-index: 4;
+}
+
+#desktop-first {
+	background-image: url('img/desktop-first.jpg');
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	z-index: 3;
+}
+
+#desktop-first-d {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	z-index: 3;
+}
+
+#adaptive {
+	position: absolute;
+	background-image: url('img/adaptive.gif');
+	height: 300px;
+	opacity: 0;
+}
+
+#responsive {
+	position: absolute;
+	background-image: url('img/responsive.gif');
+	height: 300px;
+	opacity: 0;
+}
+
+#adaptive-d, #responsive-d{
+	position: absolute;
+		top: 33vh;	
+	opacity: 0;
+	z-index: 2;
+}
+
+#responsive-adaptive {
+	position: absolute;
+	top: -10vh;
+	opacity: 0;
+	z-index: 2;
+}
+
+#mobile-first {
+	background-image: url('img/mobile-first.jpg');
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	z-index: 1;
+}
+
+#mobile-first-d {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	z-index: 1;
+}
